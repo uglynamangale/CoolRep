@@ -1,0 +1,23 @@
+﻿<Window x:Class="RBooking.HelloNewUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+        xmlns:local="clr-namespace:RBooking"
+        mc:Ignorable="d"
+        Title="HelloNewUser" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="F" FontSize="20" HorizontalAlignment="Left" Margin="486,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="486,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="238"><Run Language="ru-ru" Text="Фамилия"/></TextBlock>
+        <TextBox x:Name="N" FontSize="20" HorizontalAlignment="Left" Margin="486,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="486,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="238"><Run Language="ru-ru" Text="Имя"/></TextBlock>
+        <TextBox x:Name="O" FontSize="20" HorizontalAlignment="Left" Margin="486,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="486,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="238"><Run Language="ru-ru" Text="Отчество"/></TextBlock>
+        <TextBox Text="{Binding PhoneNumber, StringFormat={}{0:(###)###-####}}" x:Name="T" FontSize="20" HorizontalAlignment="Left" Margin="486,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="486,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="238"><Run Language="ru-ru" Text="Контактный телефон"/></TextBlock>
+        <Button x:Name="ContinueTB" FontSize="20" Content="Продолжить" HorizontalAlignment="Left" Margin="592,338,0,0" VerticalAlignment="Top" Height="36" Width="124" Click="ContinueTB_Click"/>
+        <TextBlock x:Name="Psp" HorizontalAlignment="Left" Margin="141,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="296" FontSize="20"><Run Language="ru-ru" Text="Ваши серия и номер паспорта"/></TextBlock>
+
+    </Grid>
+</Window>

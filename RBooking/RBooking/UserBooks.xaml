@@ -1,0 +1,19 @@
+﻿<Window x:Class="RBooking.UserBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RBooking"
+        mc:Ignorable="d"
+        Title="UserBooks" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="BooksData" Margin="27,124,0,0" Height="225" VerticalAlignment="Top" HorizontalAlignment="Left" Width="726">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" IsReadOnly="True" Width="*" Binding="{Binding Date}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Время начала" IsReadOnly="True" Width="*" Binding="{Binding Time}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Длительность брони" IsReadOnly="True" Width="*" Binding="{Binding Lenght}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Drop" FontSize="20" Content="Отказаться от брони" HorizontalAlignment="Left" Margin="539,354,0,0" VerticalAlignment="Top" Height="35" Width="214" Click="Drop_Click"/>
+    </Grid>
+</Window>

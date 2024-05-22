@@ -1,0 +1,2158 @@
+﻿<Window x:Class="RBooking.Booking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RBooking"
+        mc:Ignorable="d"
+        Title="Booking" Height="600" Width="1000">
+    <Grid>
+        <StackPanel Margin="38,52,738,129">
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z1" Content="Зал 1" Width="85" Click="Z_Checked"/>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z2" Content="Зал 2" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z3" Content="Зал 3" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z4" Content="Зал 4" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z5" Content="Зал 5" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z6" Content="Зал 6" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z7" Content="Зал 7" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z8" Content="Зал 8" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z9" Content="Зал 9" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+            <Viewbox Height="40">
+                <CheckBox x:Name="Z10" Content="Зал 10" Width="85" Click="Z_Checked"></CheckBox>
+            </Viewbox>
+
+        </StackPanel>
+        <ScrollViewer Margin="500,52,10,104">
+            <StackPanel x:Name="MainPanel" Height="0">
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T1" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL1_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL1_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL1_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T2" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL2_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL2_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL2_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T3" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL3_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL3_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL3_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T4" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL4_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL4_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL4_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T5" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL5_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL5_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL5_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T6" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL6_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL6_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL6_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T7" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL7_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL7_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL7_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T8" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL8_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL8_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL8_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T9" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL9_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL9_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL9_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T10" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL10_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL10_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL10_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T11" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL11_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL11_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL11_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T12" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL12_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL12_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL12_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T13" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL13_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL13_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL13_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T14" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL14_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL14_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL14_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T15" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL15_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL15_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL15_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T16" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL16_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL16_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL16_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T17" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL17_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL17_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL17_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T18" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL18_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL18_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL18_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T19" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL19_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL19_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL19_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T20" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL20_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL20_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL20_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T21" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL21_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL21_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL21_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T22" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL22_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL22_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL22_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T23" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL23_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL23_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL23_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T24" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL24_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL24_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL24_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T25" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL25_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL25_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL25_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T26" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL26_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL26_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL26_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T27" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL27_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL27_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL27_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T28" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL28_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL28_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL28_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T29" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL29_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL29_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL29_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T30" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL30_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL30_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL30_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T31" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL31_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL31_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL31_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T32" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL32_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL32_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL32_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T33" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL33_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL33_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL33_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T34" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL34_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL34_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL34_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T35" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL35_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL35_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL35_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T36" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL36_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL36_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL36_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T37" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL37_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL37_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL37_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T38" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL38_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL38_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL38_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T39" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL39_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL39_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL39_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T40" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL40_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL40_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL40_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T41" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL41_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL41_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL41_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T42" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL42_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL42_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL42_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T43" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL43_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL43_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL43_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T44" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL44_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL44_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL44_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T45" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL45_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL45_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL45_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T46" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL46_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL46_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL46_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T47" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL47_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL47_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL47_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T48" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL48_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL48_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL48_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T49" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL49_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL49_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL49_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T50" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL50_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL50_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL50_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T51" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL51_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL51_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL51_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T52" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL52_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL52_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL52_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T53" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL53_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL53_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL53_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T54" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL54_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL54_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL54_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T55" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL55_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL55_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL55_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T56" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL56_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL56_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL56_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T57" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL57_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL57_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL57_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T58" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL58_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL58_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL58_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T59" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL59_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL59_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL59_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T60" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL60_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL60_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL60_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T61" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL61_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL61_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL61_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T62" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL62_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL62_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL62_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T63" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL63_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL63_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL63_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T64" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL64_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL64_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL64_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T65" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL65_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL65_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL65_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T66" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL66_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL66_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL66_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T67" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL67_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL67_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL67_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T68" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL68_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL68_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL68_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T69" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL69_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL69_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL69_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T70" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL70_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL70_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL70_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T71" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL71_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL71_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL71_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T72" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL72_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL72_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL72_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T73" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL73_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL73_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL73_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T74" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL74_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL74_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL74_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T75" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL75_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL75_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL75_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T76" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL76_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL76_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL76_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T77" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL77_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL77_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL77_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T78" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL78_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL78_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL78_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T79" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL79_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL79_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL79_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T80" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL80_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL80_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL80_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T81" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL81_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL81_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL81_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T82" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL82_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL82_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL82_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T83" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL83_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL83_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL83_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T84" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL84_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL84_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL84_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T85" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL85_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL85_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL85_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T86" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL86_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL86_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL86_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T87" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL87_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL87_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL87_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T88" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL88_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL88_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL88_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T89" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL89_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL89_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL89_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T90" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL90_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL90_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL90_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T91" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL91_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL91_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL91_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T92" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL92_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL92_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL92_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T93" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL93_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL93_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL93_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T94" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL94_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL94_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL94_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T95" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL95_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL95_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL95_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T96" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL96_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL96_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL96_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T97" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL97_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL97_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL97_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T98" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL98_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL98_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL98_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T99" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL99_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL99_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL99_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T100" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL100_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL100_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL100_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T101" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL101_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL101_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL101_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T102" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL102_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL102_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL102_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T103" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL103_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL103_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL103_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T104" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL104_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL104_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL104_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T105" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL105_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL105_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL105_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T106" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL106_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL106_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL106_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T107" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL107_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL107_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL107_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T108" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL108_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL108_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL108_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T109" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL109_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL109_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL109_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T110" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL110_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL110_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL110_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T111" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL111_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL111_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL111_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T112" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL112_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL112_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL112_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T113" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL113_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL113_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL113_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T114" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL114_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL114_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL114_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T115" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL115_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL115_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL115_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T116" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL116_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL116_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL116_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T117" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL117_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL117_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL117_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T118" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL118_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL118_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL118_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T119" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL119_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL119_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL119_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T120" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL120_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL120_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL120_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T121" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL121_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL121_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL121_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T122" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL122_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL122_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL122_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T123" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL123_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL123_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL123_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T124" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL124_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL124_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL124_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T125" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL125_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL125_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL125_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T126" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL126_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL126_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL126_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T127" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL127_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL127_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL127_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T128" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL128_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL128_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL128_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T129" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL129_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL129_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL129_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T130" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL130_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL130_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL130_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T131" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL131_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL131_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL131_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T132" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL132_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL132_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL132_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T133" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL133_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL133_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL133_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T134" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL134_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL134_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL134_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T135" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL135_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL135_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL135_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T136" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL136_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL136_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL136_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T137" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL137_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL137_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL137_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T138" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL138_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL138_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL138_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T139" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL139_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL139_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL139_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T140" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL140_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL140_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL140_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T141" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL141_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL141_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL141_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T142" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL142_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL142_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL142_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T143" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL143_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL143_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL143_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T144" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL144_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL144_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL144_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T145" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL145_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL145_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL145_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T146" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL146_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL146_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL146_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T147" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL147_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL147_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL147_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T148" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL148_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL148_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL148_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T149" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL149_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL149_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL149_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="40">
+                        <CheckBox Click="T_Click" x:Name="T150" Content="Стол 1" Width="57"></CheckBox>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL150_Hall" FontSize="20" Content="Зал 1"></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL150_People" FontSize="20"  Content="8 чел."></Label>
+                    </Viewbox>
+                    <Viewbox Height="40">
+                        <Label x:Name="TL150_Price" FontSize="20"  Content="20000 руб./час"></Label>
+                    </Viewbox>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock x:Name="Check" FontSize="20" TextAlignment="Center" HorizontalAlignment="Left" Margin="38,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="462"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="38,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Залы"/></TextBlock>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="500,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"><Run Language="ru-ru" Text="Столики"/></TextBlock>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="267,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Дата брони"/></TextBlock>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="267,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Время начала"/></TextBlock>
+        <DatePicker x:Name="Date" FontSize="25" HorizontalAlignment="Left" Margin="267,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Time" FontSize="25" HorizontalAlignment="Left" Margin="267,220,0,0" VerticalAlignment="Top" Width="195"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="270,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="83"><Run Text="Длительность"/><LineBreak/><Run Text="брони (мин.)"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="Processing" FontSize="25" HorizontalAlignment="Left" Margin="270,402,0,0" VerticalAlignment="Top" Width="195" TextChanged="Processing_TextChanged"/>
+        <Button x:Name="Continue" FontSize="30" Content="Продолжить" HorizontalAlignment="Left" Margin="505,494,0,0" VerticalAlignment="Top" Height="55" Width="218" Click="Continue_Click"/>
+    </Grid>
+</Window>

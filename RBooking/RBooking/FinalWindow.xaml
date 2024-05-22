@@ -1,0 +1,209 @@
+﻿<Window x:Class="RBooking.FinalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RBooking"
+        mc:Ignorable="d"
+        Title="FinalWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer Margin="10,10,55,80">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S1" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP1" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S2" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP2" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S3" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP3" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S4" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP4" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S5" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP5" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S6" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP6" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S7" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP7" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S8" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP8" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S9" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP9" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S10" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP10" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S11" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP11" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S12" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP12" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S13" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP13" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S14" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP14" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S15" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP15" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S16" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP16" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S17" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP17" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S18" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP18" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S19" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP19" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S20" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP20" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S21" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP21" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S22" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP22" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S23" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP23" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Viewbox Height="30">
+                        <CheckBox x:Name="S24" Content="Услуга 1" Width="204"/>
+                    </Viewbox>
+                    <Viewbox Height="30">
+                        <TextBlock x:Name="SP24" Text="20000 руб." Width="80"/>
+                    </Viewbox>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <Button x:Name="BookAll" FontSize="20" Content="Подсчитать сумму чека" HorizontalAlignment="Left" Margin="475,359,0,0" VerticalAlignment="Top" Height="41" Width="270" Click="BookAll_Click"/>
+
+    </Grid>
+</Window>

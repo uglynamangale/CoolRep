@@ -1,0 +1,17 @@
+﻿<Window x:Class="RBooking.Hello"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RBooking"
+        mc:Ignorable="d"
+        Title="Hello" Height="400" Width="600">
+    <Grid>
+        <TextBox x:Name="PassportTB1" FontSize="20" HorizontalAlignment="Left" Margin="318,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41"/>
+        <TextBox x:Name="PassportTB2" FontSize="20" HorizontalAlignment="Left" Margin="371,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41"/>
+        <TextBox x:Name="PassportTB3" FontSize="20" HorizontalAlignment="Left" Margin="424,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="318,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="238"><Run Language="ru-ru" Text="Введите серию и номер паспорта для продолжения"/></TextBlock>
+        <Button x:Name="ContinueTB" FontSize="20" Content="Продолжить" HorizontalAlignment="Left" Margin="424,218,0,0" VerticalAlignment="Top" Height="36" Width="124" Click="ContinueTB_Click"/>
+
+    </Grid>
+</Window>

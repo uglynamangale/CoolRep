@@ -1,0 +1,23 @@
+﻿<Window x:Class="kursach1.Windows.Small1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursach1.Windows"
+        mc:Ignorable="d"
+        Title="Small1" Height="550" Width="500">
+    <Grid HorizontalAlignment="Center" Width="480" Height="528" VerticalAlignment="Top">
+        <Button Content="Добавить" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Width="112" Height="28" Click="Button_Click_1"/>
+        <Label Content="Добавить заявку" Margin="0,10,0,0" VerticalAlignment="Top" Width="159"/>
+        <Grid x:Name ="S1" HorizontalAlignment="Center" Height="334" Margin="0,89,0,0" VerticalAlignment="Top" Width="424">
+            <Label Content="Клиент" HorizontalAlignment="Left" Margin="21,7,0,0" VerticalAlignment="Top"/>
+            <Label Content="Тема" HorizontalAlignment="Left" Margin="29,54,0,0" VerticalAlignment="Top"/>
+            <Label Content="Подробное &#xA;  описание" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Top" Width="110"/>
+            <ComboBox x:Name="Chc" HorizontalAlignment="Left" Margin="115,0,0,0" VerticalAlignment="Top" Width="291" Height="38" FontSize="18" />
+            <TextBox x:Name = "Theme" HorizontalAlignment="Left" Margin="115,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="291" Height="32"/>
+            <TextBox x:Name = "Op" HorizontalAlignment="Left" Margin="115,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="291" Height="95" FontSize="14"/>
+            <Label Content="    Ответ &#xA; на заявку" HorizontalAlignment="Left" Margin="0,220,0,0" VerticalAlignment="Top" Width="110"/>
+            <TextBox x:Name = "Answer" HorizontalAlignment="Left" Margin="115,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="291" Height="104" FontSize="14"/>
+        </Grid>
+    </Grid>
+</Window>

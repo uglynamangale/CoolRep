@@ -1,0 +1,18 @@
+﻿<Page x:Class="kursach1.Pages.Vod"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kursach1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="375"
+      Title="Vod">
+
+    <Grid>
+        <Label Content="Восстановление пароля" Margin="0,10,0,0" VerticalAlignment="Top" Height="60" Width="293" FontSize="26"/>
+        <Label Content="Введите номер водительских прав" Margin="0,70,0,0" VerticalAlignment="Top" Height="60" Width="313" FontSize="18"/>
+        <TextBox x:Name="Numero" Margin="0,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" Height="41" FontSize="16"/>
+        <Button Content="Восстановить" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Height="48" Width="143" Click="Button_Click"/>
+
+    </Grid>
+</Page>
